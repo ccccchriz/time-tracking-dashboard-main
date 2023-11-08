@@ -8,10 +8,11 @@
   --clr-accent-social: 264, 64%, 52%;
   --clr-accent-self-care: 43, 84%, 65%;
 
-  --clr-neutral-100: 236, 100%, 87%;
-  --clr-neutral-200: 235, 45%, 61%;
-  --clr-neutral-300: 235, 46%, 20%;
-  --clr-neutral-400: 226, 43%, 10%;
+  --clr-neutral-100: 0, 0%, 100%;
+  --clr-neutral-200: 236, 100%, 87%;
+  --clr-neutral-300: 235, 45%, 61%;
+  --clr-neutral-400: 235, 46%, 20%;
+  --clr-neutral-500: 226, 43%, 10%;
 
   --ff-base: "Rubik", sans-serif;
 
@@ -83,4 +84,73 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(var(--clr-neutral-500));
+}
+
+.dashboard {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-light);
+  color: hsl(var(--clr-neutral-100));
+  font-size: var(--fs-base);
+}
+
+/* Panel with the user info and the buttons to select timeframe */
+
+.dashboard__panel {
+  --border-radius: 15px;
+  background-color: hsl(var(--clr-neutral-400));
+  border-radius: var(--border-radius);
+}
+
+.dashboard__user {
+  background-color: hsl(var(--clr-primary-blue));
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  column-gap: 1rem;
+}
+
+.dashboard__user > img {
+  border-radius: 50%;
+  border: 3px hsl(var(--clr-neutral-100)) solid;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.dashboard__for {
+  color: hsl(var(--clr-neutral-200));
+  font-size: 0.9rem;
+  align-self: self-end;
+}
+
+.dashboard__name {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.dashboard__buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.dashboard__buttons > button {
+  background-color: transparent;
+  border: none;
+  color: hsl(var(--clr-neutral-300));
+}
+
+.dashboard__selected {
+  color: hsl(var(--clr-neutral-100)) !important;
 }
