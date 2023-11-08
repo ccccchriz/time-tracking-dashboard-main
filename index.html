@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="user">Report for Jeremy Robson</div>
+        <div class="buttons">
+          <button id="daily">Daily</button>
+          <button id="weekly">Weekly</button>
+          <button id="monthly">Monthly</button>
+        </div>
+        <div class="card card--work">
+          <div class="card__data">
+            <div class="card__type card__type--work">
+              <span>Work</span><img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__info">
+              <span><span id="num_work">32</span>hrs</span>
+              <span>
+                <span>Last Week - </span>
+                <span id="num_prev_work">36</span>hrs</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card card--play">
+          <div class="card__data">
+            <div class="card__type card__type--play">
+              <span>Play</span><img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__info">
+              <span><span id="num_play">32</span>hrs</span>
+              <span>
+                <span>Last Week - </span>
+                <span id="num_prev_play">36</span>hrs</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card card--study">
+          <div class="card__data">
+            <div class="card__type card__type--study">
+              <span>Study</span><img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__info">
+              <span><span id="num_study">32</span>hrs</span>
+              <span>
+                <span>Last Week - </span>
+                <span id="num_prev_study">36</span>hrs</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card card--exercise">
+          <div class="card__data">
+            <div class="card__type card__type--exercise">
+              <span>Exercise</span><img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__info">
+              <span><span id="num_exercise">32</span>hrs</span>
+              <span>
+                <span>Last Week - </span>
+                <span id="num_prev_exercise">36</span>hrs</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card card--social">
+          <div class="card__data">
+            <div class="card__type card__type--social">
+              <span>Social</span><img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__info">
+              <span><span id="num_social">32</span>hrs</span>
+              <span>
+                <span>Last Week - </span>
+                <span id="num_prev_social">36</span>hrs</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card card--self-care">
+          <div class="card__data">
+            <div class="card__type card__type--self-care">
+              <span>Self Care</span
+              ><img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__info">
+              <span><span id="num_self-care">32</span>hrs</span>
+              <span>
+                <span>Last Week - </span>
+                <span id="num_prev_self-care">36</span>hrs</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
