@@ -22,7 +22,13 @@ const showData = (timeframeIndex = 0) => {
     else document.getElementById(name).classList.remove("dashboard__selected");
   });
 
-  // Load numbers into html
+  // Update the Last [Day, Week, Month] text to display the correct thing
+  [...document.getElementsByClassName("card__timeframe")].forEach((element) => {
+    const timeframeSingle = ["Day", "Week", "Month"][timeframeIndex];
+    element.textContent = `Last ${timeframeSingle} - `;
+  });
+
+  // Update the numbers to display the selected timeframe
   categories.forEach((category, index) => {
     const values = data[index].timeframes[timeframe];
     document.getElementById(`num_${category}`).textContent = values.current;

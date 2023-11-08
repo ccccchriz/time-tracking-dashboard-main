@@ -98,6 +98,9 @@ main {
 }
 
 .dashboard {
+  margin: 4rem 0;
+  display: grid;
+  gap: 1rem;
   font-family: var(--ff-base);
   font-weight: var(--fw-light);
   color: hsl(var(--clr-neutral-100));
@@ -153,4 +156,47 @@ main {
 
 .dashboard__selected {
   color: hsl(var(--clr-neutral-100)) !important;
+}
+
+/* Dashboard cards */
+
+.dashboard__card {
+  display: grid;
+  align-items: self-end;
+}
+
+.card__data {
+  --border-radius: 15px;
+  padding: 1.5rem;
+  background-color: hsl(var(--clr-neutral-400));
+  border-radius: var(--border-radius);
+}
+
+.card__type {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
+
+.card__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__type {
+  font-weight: var(--fw-medium);
+  font-size: 0.95rem;
+}
+
+.card__big-number {
+  font-size: 1.7rem;
+}
+
+.card__prev-number {
+  font-size: 0.9rem;
+  color: hsl(var(--clr-neutral-200));
 }
