@@ -15,12 +15,14 @@ const showData = (timeframeIndex = 0) => {
   }
   const timeframe = timeframes[timeframeIndex];
 
+  // Add dashboard__selected class to the button which timeframe is currently selected
   timeframes.forEach((name, index) => {
     if (index == timeframeIndex)
       document.getElementById(name).classList.add("dashboard__selected");
     else document.getElementById(name).classList.remove("dashboard__selected");
   });
 
+  // Load numbers into html
   categories.forEach((category, index) => {
     const values = data[index].timeframes[timeframe];
     document.getElementById(`num_${category}`).textContent = values.current;
@@ -29,6 +31,7 @@ const showData = (timeframeIndex = 0) => {
   });
 };
 
+// Add function to buttons
 timeframes.forEach((name, index) => {
   document
     .getElementById(name)
