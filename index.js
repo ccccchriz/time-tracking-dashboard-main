@@ -43,3 +43,14 @@ timeframes.forEach((name, index) => {
     .getElementById(name)
     .addEventListener("click", () => showData(index));
 });
+
+// Stop hover effect on parent when the three dotted image is hovered over
+[...document.getElementsByClassName("card__data")].forEach((el) => {
+  const img = el.getElementsByClassName("card__menu-img")[0];
+  img.addEventListener("mouseover", () => {
+    el.classList.remove("card__hover-effect");
+  });
+  img.addEventListener("mouseout", () => {
+    el.classList.add("card__hover-effect");
+  });
+});

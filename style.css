@@ -152,8 +152,10 @@ main {
   background-color: transparent;
   border: none;
   color: hsl(var(--clr-neutral-300));
+  cursor: pointer;
 }
 
+.dashboard__buttons > button:hover,
 .dashboard__selected {
   color: hsl(var(--clr-neutral-100)) !important;
 }
@@ -170,6 +172,11 @@ main {
   padding: 1.5rem;
   background-color: hsl(var(--clr-neutral-400));
   border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.card__hover-effect:hover {
+  background-color: hsla(var(--clr-neutral-300), 0.4);
 }
 
 .card__type {
@@ -178,6 +185,15 @@ main {
   justify-content: space-between;
   align-items: center;
   border-radius: var(--border-radius);
+}
+
+.card__menu-img {
+  cursor: pointer;
+  padding: 0.5rem 0 0.5rem 2rem;
+}
+
+.card__menu-img:hover {
+  filter: brightness(2);
 }
 
 .card__info {
