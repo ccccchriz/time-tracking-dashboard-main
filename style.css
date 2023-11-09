@@ -163,16 +163,18 @@ main {
 /* Dashboard cards */
 
 .dashboard__card {
+  --border-radius: 15px;
   display: grid;
   align-items: self-end;
+  border-radius: var(--border-radius);
 }
 
 .card__data {
-  --border-radius: 15px;
   padding: 1.5rem;
   background-color: hsl(var(--clr-neutral-400));
   border-radius: var(--border-radius);
   cursor: pointer;
+  margin-top: 2rem;
 }
 
 .card__hover-effect:hover {
@@ -215,4 +217,48 @@ main {
 .card__prev-number {
   font-size: 0.9rem;
   color: hsl(var(--clr-neutral-200));
+}
+
+/* Styling for each unique card */
+
+.dashboard__card--work {
+  background-color: hsl(var(--clr-accent-work));
+  background-image: url(images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: 97% -10px;
+}
+
+.dashboard__card--play {
+  background-color: hsl(var(--clr-accent-play));
+  background-image: url(images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 97% -10px;
+}
+
+.dashboard__card--study {
+  background-color: hsl(var(--clr-accent-study));
+  background-image: url(images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: 97% -10px;
+}
+
+.dashboard__card--exercise {
+  background-color: hsl(var(--clr-accent-exercise));
+  background-image: url(images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: 97% -10px;
+}
+
+.dashboard__card--social {
+  background-color: hsl(var(--clr-accent-social));
+  background-image: url(images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: 97% -10px;
+}
+
+.dashboard__card--self-care {
+  background-color: hsl(var(--clr-accent-self-care));
+  background-image: url(images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: 97% -10px;
 }
