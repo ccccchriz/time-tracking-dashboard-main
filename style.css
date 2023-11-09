@@ -262,3 +262,53 @@ main {
   background-repeat: no-repeat;
   background-position: 97% -10px;
 }
+
+@media (min-width: 1000px) {
+  .dashboard {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .dashboard__panel {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard__user {
+    flex-grow: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard__user > img {
+    max-width: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .dashboard__name {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.8rem;
+    padding-right: 3rem;
+  }
+
+  .dashboard__buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    flex-grow: 0;
+    margin-bottom: 0.4rem;
+  }
+
+  .dashboard__card {
+    width: 13rem;
+  }
+
+  .card__big-number {
+    font-size: 3rem;
+  }
+
+  .card__info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
