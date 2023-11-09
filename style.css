@@ -279,6 +279,7 @@ article {
   .panel__user {
     flex-grow: 1;
     grid-template-columns: 1fr;
+    font-weight: var(--fw-light);
   }
 
   .panel__user > img {
