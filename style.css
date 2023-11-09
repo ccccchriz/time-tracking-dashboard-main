@@ -178,7 +178,7 @@ main {
 }
 
 .card__hover-effect:hover {
-  background-color: hsla(var(--clr-neutral-300), 0.4);
+  background-color: hsla(var(--clr-neutral-300));
 }
 
 .card__type {
