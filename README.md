@@ -18,5 +18,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [frontendmentor]()
-- Live Site URL: [netlify]()
+- Solution URL: [frontendmentor](https://www.frontendmentor.io/solutions/time-tracking-dashboard-wZQhYoI3-T)
+- Live Site URL: [netlify](https://willowy-seahorse-d33025.netlify.app)
