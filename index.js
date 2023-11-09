@@ -15,11 +15,11 @@ const showData = (timeframeIndex = 0) => {
   }
   const timeframe = timeframes[timeframeIndex];
 
-  // Add dashboard__selected class to the button which timeframe is currently selected
+  // Add panel__selected class to the button which timeframe is currently selected
   timeframes.forEach((name, index) => {
     if (index == timeframeIndex)
-      document.getElementById(name).classList.add("dashboard__selected");
-    else document.getElementById(name).classList.remove("dashboard__selected");
+      document.getElementById(name).classList.add("panel__selected");
+    else document.getElementById(name).classList.remove("panel__selected");
   });
 
   // Update the Last [Day, Week, Month] text to display the correct thing
@@ -46,7 +46,7 @@ timeframes.forEach((name, index) => {
 
 // Stop hover effect on parent when the three dotted image is hovered over
 [...document.getElementsByClassName("card__data")].forEach((el) => {
-  const img = el.getElementsByClassName("card__menu-img")[0];
+  const img = el.querySelector("img");
   img.addEventListener("mouseover", () => {
     el.classList.remove("card__hover-effect");
   });

@@ -25,152 +25,118 @@
   </head>
   <body>
     <main>
-      <section class="dashboard">
-        <div class="dashboard__panel">
-          <div class="dashboard__user">
+      <article>
+        <div class="panel">
+          <h1 class="panel__user">
             <img src="images/image-jeremy.png" alt="" />
-            <span class="dashboard__for">Report for </span>
-            <span class="dashboard__name">Jeremy <span>Robson</span></span>
-          </div>
-          <div class="dashboard__buttons">
-            <button id="daily" class="dashboard__selected">Daily</button>
+            <small>Report for </small>
+            <strong>Jeremy <span>Robson</span></strong>
+          </h1>
+          <div class="panel__buttons">
+            <button id="daily" class="panel__selected">Daily</button>
             <button id="weekly">Weekly</button>
             <button id="monthly">Monthly</button>
           </div>
         </div>
         <!-- work card -->
-        <div class="dashboard__card dashboard__card--work">
+        <div class="card card--work">
           <div class="card__data card__hover-effect">
-            <div class="card__type card__type--work">
-              <span>Work</span
-              ><img
-                src="images/icon-ellipsis.svg"
-                alt=""
-                class="card__menu-img"
-              />
+            <div class="card__type">
+              <h2>Work</h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
             </div>
             <div class="card__info">
-              <span class="card__big-number">
-                <span id="num_work">0</span><span>hrs</span>
-              </span>
-              <span class="card__prev-number">
+              <strong> <span id="num_work">0</span><span>hrs</span> </strong>
+              <small>
                 <span class="card__timeframe">Last Day - </span>
                 <span id="num_prev_work">0</span><span>hrs</span>
-              </span>
+              </small>
             </div>
           </div>
         </div>
         <!-- play card -->
-        <div class="dashboard__card dashboard__card--play">
+        <div class="card card--play">
           <div class="card__data card__hover-effect">
-            <div class="card__type card__type--play">
-              <span>Play</span
-              ><img
-                src="images/icon-ellipsis.svg"
-                alt=""
-                class="card__menu-img"
-              />
+            <div class="card__type">
+              <h2>Play</h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
             </div>
             <div class="card__info">
-              <span class="card__big-number"
-                ><span id="num_play">0</span><span>hrs</span></span
-              >
-              <span class="card__prev-number">
+              <strong><span id="num_play">0</span><span>hrs</span> </strong>
+              <small>
                 <span class="card__timeframe">Last Day - </span>
-                <span id="num_prev_play">0</span><span>hrs</span></span
-              >
+                <span id="num_prev_play">0</span><span>hrs</span>
+              </small>
             </div>
           </div>
         </div>
         <!-- study card -->
-        <div class="dashboard__card dashboard__card--study">
+        <div class="card card--study">
           <div class="card__data card__hover-effect">
-            <div class="card__type card__type--study">
-              <span>Study</span
-              ><img
-                src="images/icon-ellipsis.svg"
-                alt=""
-                class="card__menu-img"
-              />
+            <div class="card__type">
+              <h2>Study</h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
             </div>
             <div class="card__info">
-              <span class="card__big-number"
-                ><span id="num_study">0</span><span>hrs</span></span
-              >
-              <span class="card__prev-number">
+              <strong><span id="num_study">0</span><span>hrs</span> </strong>
+              <small>
                 <span class="card__timeframe">Last Day - </span>
-                <span id="num_prev_study">0</span><span>hrs</span></span
-              >
+                <span id="num_prev_study">0</span><span>hrs</span>
+              </small>
             </div>
           </div>
         </div>
         <!-- exercise card -->
-        <div class="dashboard__card dashboard__card--exercise">
+        <div class="card card--exercise">
           <div class="card__data card__hover-effect">
-            <div class="card__type card__type--exercise">
-              <span>Exercise</span
-              ><img
-                src="images/icon-ellipsis.svg"
-                alt=""
-                class="card__menu-img"
-              />
+            <div class="card__type">
+              <h2>Exercise</h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
             </div>
             <div class="card__info">
-              <span class="card__big-number"
-                ><span id="num_exercise">0</span><span>hrs</span></span
-              >
-              <span class="card__prev-number">
+              <strong><span id="num_exercise">0</span><span>hrs</span> </strong>
+              <small>
                 <span class="card__timeframe">Last Day - </span>
-                <span id="num_prev_exercise">0</span><span>hrs</span></span
-              >
+                <span id="num_prev_exercise">0</span><span>hrs</span>
+              </small>
             </div>
           </div>
         </div>
         <!-- social card -->
-        <div class="dashboard__card dashboard__card--social">
+        <div class="card card--social">
           <div class="card__data card__hover-effect">
-            <div class="card__type card__type--social">
-              <span>Social</span
-              ><img
-                src="images/icon-ellipsis.svg"
-                alt=""
-                class="card__menu-img"
-              />
+            <div class="card__type">
+              <h2>Social</h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
             </div>
             <div class="card__info">
-              <span class="card__big-number"
-                ><span id="num_social">0</span><span>hrs</span></span
-              >
-              <span class="card__prev-number">
+              <strong><span id="num_social">0</span><span>hrs</span> </strong>
+              <small>
                 <span class="card__timeframe">Last Day - </span>
-                <span id="num_prev_social">0</span><span>hrs</span></span
-              >
+                <span id="num_prev_social">0</span><span>hrs</span>
+              </small>
             </div>
           </div>
         </div>
         <!-- self care card -->
-        <div class="dashboard__card dashboard__card--self-care">
+        <div class="card card--self-care">
           <div class="card__data card__hover-effect">
-            <div class="card__type card__type--self-care">
-              <span>Self Care</span
-              ><img
-                src="images/icon-ellipsis.svg"
-                alt=""
-                class="card__menu-img"
-              />
+            <div class="card__type">
+              <h2>Self Care</h2>
+              <img src="images/icon-ellipsis.svg" alt="" />
             </div>
             <div class="card__info">
-              <span class="card__big-number"
-                ><span id="num_self-care">0</span><span>hrs</span></span
-              >
-              <span class="card__prev-number">
+              <strong
+                ><span id="num_self-care">0</span><span>hrs</span>
+              </strong>
+              <small>
                 <span class="card__timeframe">Last Day - </span>
-                <span id="num_prev_self-care">0</span><span>hrs</span></span
-              >
+                <span id="num_prev_self-care">0</span><span>hrs</span>
+              </small>
             </div>
           </div>
         </div>
-      </section>
+      </article>
     </main>
     <script src="index.js"></script>
   </body>

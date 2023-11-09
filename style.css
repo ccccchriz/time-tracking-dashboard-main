@@ -97,7 +97,7 @@ main {
   background-color: hsl(var(--clr-neutral-500));
 }
 
-.dashboard {
+article {
   margin: 4rem 0;
   display: grid;
   gap: 1rem;
@@ -109,13 +109,13 @@ main {
 
 /* Panel with the user info and the buttons to select timeframe */
 
-.dashboard__panel {
+.panel {
   --border-radius: 15px;
   background-color: hsl(var(--clr-neutral-400));
   border-radius: var(--border-radius);
 }
 
-.dashboard__user {
+.panel__user {
   background-color: hsl(var(--clr-primary-blue));
   padding: 2rem;
   border-radius: var(--border-radius);
@@ -124,45 +124,46 @@ main {
   column-gap: 1rem;
 }
 
-.dashboard__user > img {
+.panel__user > img {
   border-radius: 50%;
   border: 3px hsl(var(--clr-neutral-100)) solid;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-.dashboard__for {
+.panel__user > small {
   color: hsl(var(--clr-neutral-200));
   font-size: 0.9rem;
   align-self: self-end;
 }
 
-.dashboard__name {
+.panel__user > strong {
   font-size: 1.4rem;
   line-height: 1.2;
+  font-weight: var(--fw-light);
 }
 
-.dashboard__buttons {
+.panel__buttons {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
 }
 
-.dashboard__buttons > button {
+.panel__buttons > button {
   background-color: transparent;
   border: none;
   color: hsl(var(--clr-neutral-300));
   cursor: pointer;
 }
 
-.dashboard__buttons > button:hover,
-.dashboard__selected {
+.panel__buttons > button:hover,
+.panel__selected {
   color: hsl(var(--clr-neutral-100)) !important;
 }
 
 /* Dashboard cards */
 
-.dashboard__card {
+.card {
   --border-radius: 15px;
   display: grid;
   align-items: self-end;
@@ -189,12 +190,12 @@ main {
   border-radius: var(--border-radius);
 }
 
-.card__menu-img {
+.card__type > img {
   cursor: pointer;
   padding: 0.5rem 0 0.5rem 2rem;
 }
 
-.card__menu-img:hover {
+.card__type > img:hover {
   filter: brightness(2);
 }
 
@@ -205,58 +206,59 @@ main {
   align-items: center;
 }
 
-.card__type {
+.card__type > h2 {
   font-weight: var(--fw-medium);
   font-size: 0.95rem;
 }
 
-.card__big-number {
+.card__info > strong {
   font-size: 1.7rem;
+  font-weight: var(--fw-light);
 }
 
-.card__prev-number {
+.card__info > small {
   font-size: 0.9rem;
   color: hsl(var(--clr-neutral-200));
 }
 
 /* Styling for each unique card */
 
-.dashboard__card--work {
+.card--work {
   background-color: hsl(var(--clr-accent-work));
   background-image: url(images/icon-work.svg);
   background-repeat: no-repeat;
   background-position: 97% -10px;
 }
 
-.dashboard__card--play {
+.card--play {
   background-color: hsl(var(--clr-accent-play));
   background-image: url(images/icon-play.svg);
   background-repeat: no-repeat;
   background-position: 97% -10px;
 }
 
-.dashboard__card--study {
+.card--study {
   background-color: hsl(var(--clr-accent-study));
   background-image: url(images/icon-study.svg);
   background-repeat: no-repeat;
   background-position: 97% -10px;
 }
 
-.dashboard__card--exercise {
+.card--exercise {
   background-color: hsl(var(--clr-accent-exercise));
   background-image: url(images/icon-exercise.svg);
   background-repeat: no-repeat;
   background-position: 97% -10px;
 }
 
-.dashboard__card--social {
+.card--social {
   background-color: hsl(var(--clr-accent-social));
   background-image: url(images/icon-social.svg);
   background-repeat: no-repeat;
   background-position: 97% -10px;
 }
 
-.dashboard__card--self-care {
+.card--self-care {
   background-color: hsl(var(--clr-accent-self-care));
   background-image: url(images/icon-self-care.svg);
   background-repeat: no-repeat;
@@ -264,34 +266,34 @@ main {
 }
 
 @media (min-width: 1000px) {
-  .dashboard {
+  article {
     grid-template-columns: auto auto auto auto;
   }
 
-  .dashboard__panel {
+  .panel {
     grid-row-start: 1;
     grid-row-end: 3;
     display: flex;
     flex-direction: column;
   }
-  .dashboard__user {
+  .panel__user {
     flex-grow: 1;
     grid-template-columns: 1fr;
   }
 
-  .dashboard__user > img {
+  .panel__user > img {
     max-width: 4rem;
     margin-bottom: 1rem;
   }
 
-  .dashboard__name {
+  .panel__user > strong {
     display: flex;
     flex-direction: column;
     font-size: 2.8rem;
     padding-right: 3rem;
   }
 
-  .dashboard__buttons {
+  .panel__buttons {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.7rem;
@@ -299,11 +301,11 @@ main {
     margin-bottom: 0.4rem;
   }
 
-  .dashboard__card {
+  .card {
     width: 13rem;
   }
 
-  .card__big-number {
+  .card__info > strong {
     font-size: 3rem;
   }
 
